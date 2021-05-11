@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col text text-3">Choose Team</div>
+    </div>
+    <div *ngFor="let category of cardCategories" class="row justify-content-center">
+        <div [class.selected]="this.selectedCategory==category">
+           <div class="col-md-4 backb d-flex" (click)="libraryImageClick(category)"><img src="assets/img/{{category.image}}"></div> 
+           <div class="col-md-4"></div>
+        </div>
+    </div>
+    <button [disabled]="selectedCategory == null" (click)="categorySelected()" [routerLink]="['/stagecards']">
+        <span>Go</span>
+    </button>
+</div>
+

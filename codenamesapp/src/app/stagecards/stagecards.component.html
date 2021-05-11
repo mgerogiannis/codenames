@@ -1,0 +1,44 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+  <div class="wrapper">
+  <div class="row">
+    <div class="col-sm-2" *ngFor="let element of randomStage.stage; let i = index">
+            <div *ngFor="let cell of element" class="order-card">
+                <div class="card-block">
+                    <small><h6 class="col-sm-5" style="text-align:center;" [ngClass]="{
+                      'blue' :  cell.match('blue'),
+                      'red' :   cell.match('red'),
+                      'yellow': cell.match('white'),
+                      'black' : cell.match('black')
+                   }">{{cell}}</h6></small>
+                </div>
+            </div>
+        {{element}},{{i}}
+	  </div>
+    <form [formGroup]="keyWordForm">
+    <div class="text">Enter Key-Word</div>
+            <br> 
+            <input type="text" class="input" formControlName="keyWord">
+            <br>
+            <button class="button" (click)="sendKeyWord()">
+              send
+            </button>
+    </form>
+    <div class="wrapper2">
+      <div *ngFor="let card of wordCards">
+          <div class="card2 bg-c-yellow2 order-card2">
+              <div class="card-block">
+                  <small><h6 style="text-align:center;">{{card.text}}</h6></small>
+              </div>
+          </div>
+      </div>
+    </div>    
+  </div>
+  </div>
+</div>
+<button class="button" (click)="recieveAnswers()">
+  recieve
+</button>
+<div class="text">{{answersArray}}</div>
+
+

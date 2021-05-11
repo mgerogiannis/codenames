@@ -1,0 +1,106 @@
+body{
+    margin-top:500px;
+    background:#FAFAFA;
+   
+}
+.order-card {
+    color: #fff;
+    display: grid;
+    grid-gap: 50px;
+}
+
+.yellow {
+    background: linear-gradient(45deg,#FFB64D,#ffcb80);
+}
+
+.red {
+    background : red
+   }
+   
+.blue {
+    background : blue
+   }
+
+.black {
+    background : black
+   }
+
+.wrapper{
+    display: grid;
+    grid-gap: 50px;
+}
+
+
+.card {
+    margin-top: 70px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    margin-bottom: 1px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    min-width: 180px;
+    max-height: 100px;
+}
+
+.card .card-block {
+    padding: 5px;
+}
+
+.order-card i {
+    font-size: 5px;
+}
+
+.input{
+    margin-left: 1000px;
+    width: 300px;
+}
+
+.button{
+    margin-left: 1000px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.text{
+    margin-left: 1000px;
+    color: aliceblue;
+}
+
+/* check for changes */
+/* 
+body{
+    margin-top:50px;
+    background:#FAFAFA;
+} */
+.order-card2 {
+    color: #fff;
+}
+
+.wrapper2 {
+    width: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-auto-flow: column;
+    grid-gap: 50px;
+  }
+
+
+.bg-c-yellow2 {
+    background: linear-gradient(45deg,#FFB64D,#ffcb80);
+}
+
+
+.card2 {
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    margin-bottom: 1px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    min-width: 120px;
+    min-height: 25px;
+}
+

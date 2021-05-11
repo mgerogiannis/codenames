@@ -1,0 +1,72 @@
+body{
+    margin-top:50px;
+    background:#FAFAFA;
+}
+.order-card {
+    color: #fff;
+}
+
+.wrapper {
+    width: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-auto-flow: column;
+    grid-gap: 50px;
+  }
+
+
+.bg-c-yellow {
+    background: linear-gradient(45deg,#FFB64D,#ffcb80);
+}
+
+.selected {
+	border: 5px solid white;
+	width: 110px;  
+  }
+
+.form {
+    margin-left: 100px;
+}
+
+.button{
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 150px;
+}
+
+
+.input1{
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+    display:table-caption;
+}
+
+
+.card {
+    margin-top: 70px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    margin-bottom: 1px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    min-width: 130px;
+}
+
+.input{
+    margin-left: 100px;
+    width: 300px;
+}
+
+.text{
+    margin-left: 100px;
+    color: aliceblue;
+}
+
+
+
+
+
+

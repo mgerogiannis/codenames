@@ -1,0 +1,16 @@
+<div class="back"></div>
+<div class="text text-3">Enter Key</div>
+<form [formGroup]="validationForm">
+<div class="col-sm-10">
+    <input formControlName="key" type="text" class="text">
+</div>
+<button [disabled]="validationForm.controls.key.value == null || validationForm.controls.key.value == 'Waiting for connection key...'" [routerLink]="['/wordcards']">
+	<span>Go spy</span>
+</button>
+<br>
+<button [disabled]="validationForm.controls.key.value == null || validationForm.controls.key.value == 'Waiting for connection key...'" [routerLink]="['/stagecards']">
+	<span>Go master</span>
+</button>
+</form>
+
+

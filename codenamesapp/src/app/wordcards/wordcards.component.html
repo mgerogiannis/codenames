@@ -1,0 +1,36 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <form [formGroup]="keyWordForm">
+    <div class="text">Look for:</div>
+        <br> 
+        <input type="text" class="input" formControlName="keyWord">
+        <br>
+    </form>
+    <div *ngIf="wordCards" class="wrapper">
+        <div *ngFor="let card of wordCards">
+            <div class="card bg-c-yellow order-card">
+               <div [class.selected]="this.selectedCategory==card">
+                <div class="card-block">    
+                    <small><h6 style="text-align:center;" (click)="libraryImageClick(card)">{{card.text}}</h6></small>
+                </div>
+              </div>
+            </div>
+        </div>
+        <form class="form" [formGroup]="choicesForm">
+            <div class="text"> Choices: </div>
+            <br> 
+            <input type="text" class="input1" formControlName="choice" [readonly]="true">
+            <br>
+            <button (click)="send()" class="button">
+                send
+            </button>
+            <button (click)="reset()" class="button">
+                clear
+            </button>
+            <button (click)="pass()" class="button">
+                pass
+            </button>
+        </form>
+	</div>
+</div>
+
